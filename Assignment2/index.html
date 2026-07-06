@@ -4,91 +4,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>Miri Utevsky</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<style>
-    footer {
-        text-align: center;
-        padding: 1px;
-        background-color: #354968;
-        color: white;
-        font-family: Arial, sans-serif;
-        font-weight: bold;
-        font-size: 16px;
-    }
-</style>
 
-<body style="font-size: 18px; font-family: Arial, sans-serif;">
+<body>
 
-    <img src="images/profile.jpg" alt="Profile Picture" width="190" align="right">
+    <header class="hero">
+        <div class="hero-content">
+            <h1>I'm Miri.</h1>
+            <p>Product, Data & Information Systems</p>
+        </div>
+    </header>
 
-    <h1>Miri Utevsky</h1>
+    <main>
 
-    <h2>Professional Summary</h2>
-    <p>
-        Information Systems Management student with strong technical aptitude in Data Analytics & BI.<br>
-        Brings hands-on experience in End-to-End system implementation and data visualization.<br>
-        Highly motivated autodidact with a passion for transforming raw data into actionable business insights.
-    </p>
+        <section class="intro">
+            <img class="profile-img" src="images/profile.gif" alt="Miri waving hello">
 
-    <hr style="clear: both;">
+            <h2>Hello.</h2>
 
-    <h2>Education</h2>
-    <h3>2022 - Present: Information Systems Management | Ben-Gurion University of the Negev</h3>
-    <ul>
-        <li>Focus: Data Structures, Optimization, IT Systems, Statistics (R, Excel), OOP, DB Design, and 3D Graphics
-            (SolidWorks).</li>
-        <li>Business Strategy: Finance, Economics, Accounting, Marketing & Strategy.</li>
-        <li>Completed integrated Computer Science courses via the Open University.</li>
-    </ul>
-    <hr>
+            <p>
+                I work at the intersection of product, data, and business operations.
+                I enjoy understanding complex processes and turning them into clear,
+                practical digital solutions.
+            </p>
+        </section>
 
-    <h2>Experience</h2>
+        <hr>
 
-    <h3>2023 - Present: Data Analyst & Community Manager | Student-7 Initiative</h3>
-    <ul>
-        <li>Analyzed user behavior trends using Google Analytics to identify bottlenecks and improve service quality.
-        </li>
-        <li>Spearheaded marketing initiatives and managed a community of 10,000+ students.</li>
-    </ul>
+        <section class="skills">
 
-    <h3>2023: Medical Systems Implementer | Soroka Medical Center</h3>
-    <ul>
-        <li>Executed deployment of medication systems interfaced with Chameleon EMR in a critical environment.</li>
-        <li>Facilitated technical adoption for medical teams through real-time problem solving and training.</li>
-    </ul>
+            <h2>My Skills & Interests</h2>
 
-    <h3>2020-2023: Tech Instructor & Product Manager | Algorithmika</h3>
-    <ul>
-        <li>Directed content strategy for the Israeli market of an international company.</li>
-        <li>Developed lesson plans and delivered courses in Python & Scratch for youth.</li>
-        <li>Streamlined workflows and managed key client relationships.</li>
-    </ul>
+            <div class="skill-row">
 
-    <h3>Military Experience: Geo-Int Researcher | Intelligence Corps</h3>
-    <ul>
-        <li>Generated critical intelligence targets using GIS & AI tools.</li>
-        <li>Provided real-time "Overwatch" support, enabling operational decision-making through visual analysis.</li>
-    </ul>
-    <hr>
+                <div class="skill-image">
+                    <img src="images/product.jpg" alt="Product and Systems">
+                </div>
 
-    <h2>Skills</h2>
-    <ul>
-        <li><strong>Languages:</strong> Hebrew (Native), English (Fluent), Russian (Proficient).</li>
-        <li><strong>Core Competencies:</strong> Data Storytelling, Business Analysis, Process Optimization, Strategic
-            Planning.</li>
-    </ul>
-    <hr>
-    <br>
-    <nav style="        text-align: center;
-font-size: 18px; font-family: Arial, sans-serif; font-weight: bold;">
-        <a href="hobbies.html">My Hobbies</a> |
-        <a href="contact.html">Contact Me</a>
-    </nav>
-    <br>
+                <div class="skill-text">
+                    <h3>Product & Systems</h3>
+
+                    <p>
+                        I enjoy turning complex operational workflows into practical
+                        digital products. My work combines product thinking, business
+                        analysis, process design, and problem solving.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="skill-row reverse">
+
+                <div class="skill-image">
+                    <img src="images/data.jpg" alt="Data analytics">
+                </div>
+
+                <div class="skill-text">
+                    <h3>Data & Analytics</h3>
+
+                    <p>
+                        I use data to understand behavior, identify bottlenecks,
+                        support decision making, and transform information into
+                        clear business insights.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="skill-row">
+
+                <div class="skill-image">
+                    <img src="images/interests.jpg" alt="Personal interests">
+                </div>
+
+                <div class="skill-text">
+                    <h3>Curious by Nature</h3>
+
+                    <p>
+                        Outside of work, I enjoy technology, history, medicine,
+                        traveling, music, board games, sports, and learning how
+                        complex systems work.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <hr>
+
+        <section class="contact">
+
+            <h2>Get In Touch</h2>
+
+            <h3>Let's connect.</h3>
+
+            <p>
+                I am always interested in thoughtful products, complex processes,
+                data-driven ideas, and opportunities to build better systems.
+            </p>
+
+            <a class="contact-button" href="tel:+972542217262">
+                    <span class="button-title">Let's Talk</span>
+            </a>    
+
+        </section>
+
+    </main>
 
     <footer>
-        <p>&copy; Copyright © 2026 Miri Utevsky. All Rights Reserved.</p>
+
+        <div class="footer-links">
+            <a href="https://linkedin.com/in/miriu " target="_blank">LinkedIn</a>
+            <a href="mailto:Miryut@gmail.com">Email</a>
+        </div>
+
+        <p>© 2026 Miri Utevsky</p>
+
     </footer>
 
 </body>
