@@ -4,130 +4,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miri Utevsky</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>My Jungle - Miri</title>
+
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1>I'm Miri.</h1>
-            <p>Product, Data & Information Systems</p>
+    <main class="jungle">
+        <button id="music-toggle" type="button">
+            Mute
+        </button>
+        <h1>Welcome to the Jungle</h1>
+        <p>Click an animal or press its key to hear its sound</p>
+        <div class="animal animal-monkey" data-animal="monkey" data-key="m">
+
+            <img src="images/animals/static/monkey.png" data-static="images/animals/static/monkey.png"
+                data-gif="images/animals/gifs/monkey.gif" alt="Monkey">
+
+            <span>Monkey · M</span>
         </div>
-    </header>
 
-    <main>
 
-        <section class="intro">
-            <img class="profile-img" src="images/profile.gif" alt="Miri waving hello">
+        <div class="animal animal-lion" data-animal="lion" data-key="l">
 
-            <h2>Hello.</h2>
+            <img src="images/animals/static/lion.png" data-static="images/animals/static/lion.png"
+                data-gif="images/animals/gifs/lion.gif" alt="Lion">
 
-            <p>
-                I work at the intersection of product, data, and business operations.
-                I enjoy understanding complex processes and turning them into clear,
-                practical digital solutions.
-            </p>
-        </section>
+            <span>Lion · L</span>
+        </div>
 
-        <hr>
 
-        <section class="skills">
+        <div class="animal animal-bird" data-animal="bird" data-key="b">
 
-            <h2>My Skills & Interests</h2>
+            <img src="images/animals/static/bird.png" data-static="images/animals/static/bird.png"
+                data-gif="images/animals/gifs/bird.gif" alt="Bird">
 
-            <div class="skill-row">
+            <span>Bird · B</span>
+        </div>
 
-                <div class="skill-image">
-                    <img src="images/product.jpg" alt="Product and Systems">
-                </div>
 
-                <div class="skill-text">
-                    <h3>Product & Systems</h3>
+        <div class="animal animal-owl" data-animal="owl" data-key="o">
 
-                    <p>
-                        I enjoy turning complex operational workflows into practical
-                        digital products. My work combines product thinking, business
-                        analysis, process design, and problem solving.
-                    </p>
-                </div>
+            <img src="images/animals/static/owl.png" data-static="images/animals/static/owl.png"
+                data-gif="images/animals/gifs/owl.gif" alt="Owl">
 
-            </div>
+            <span>Owl · O</span>
+        </div>
 
-            <div class="skill-row reverse">
 
-                <div class="skill-image">
-                    <img src="images/data.jpg" alt="Data analytics">
-                </div>
+        <div class="animal animal-wolf" data-animal="wolf" data-key="w">
 
-                <div class="skill-text">
-                    <h3>Data & Analytics</h3>
+            <img src="images/animals/static/wolf.png" data-static="images/animals/static/wolf.png"
+                data-gif="images/animals/gifs/wolf.gif" alt="Wolf">
 
-                    <p>
-                        I use data to understand behavior, identify bottlenecks,
-                        support decision making, and transform information into
-                        clear business insights.
-                    </p>
-                </div>
+            <span>Wolf · W</span>
+        </div>
 
-            </div>
 
-            <div class="skill-row">
+        <div class="animal animal-crocodile" data-animal="crocodile" data-key="c">
 
-                <div class="skill-image">
-                    <img src="images/interests.jpg" alt="Personal interests">
-                </div>
+            <img src="images/animals/static/crocodile.png" data-static="images/animals/static/crocodile.png"
+                data-gif="images/animals/gifs/crocodile.gif" alt="Crocodile">
 
-                <div class="skill-text">
-                    <h3>Curious by Nature</h3>
+            <span>Crocodile · C</span>
+        </div>
 
-                    <p>
-                        Outside of work, I enjoy technology, history, medicine,
-                        traveling, music, board games, sports, and learning how
-                        complex systems work.
-                    </p>
-                </div>
 
-            </div>
+        <div class="animal animal-frog" data-animal="frog" data-key="f">
 
-        </section>
+            <img src="images/animals/static/frog.png" data-static="images/animals/static/frog.png"
+                data-gif="images/animals/gifs/frog.gif" alt="Frog">
 
-        <hr>
+            <span>Frog · F</span>
+        </div>
 
-        <section class="contact">
 
-            <h2>Get In Touch</h2>
+        <div class="animal animal-snake" data-animal="snake" data-key="s">
 
-            <h3>Let's connect.</h3>
+            <img src="images/animals/static/snake.png" data-static="images/animals/static/snake.png"
+                data-gif="images/animals/gifs/snake.gif" alt="Snake">
 
-            <p>
-                I am always interested in thoughtful products, complex processes,
-                data-driven ideas, and opportunities to build better systems.
-            </p>
-
-            <a class="contact-button" href="tel:+972542217262">
-                    <span class="button-title">Let's Talk</span>
-            </a>    
-
-        </section>
-
+            <span>Snake · S</span>
+        </div>
     </main>
-
-    <footer>
-
-        <div class="footer-links">
-            <a href="https://linkedin.com/in/miriu " target="_blank">LinkedIn</a>
-            <a href="mailto:Miryut@gmail.com">Email</a>
-        </div>
-
-        <p>© 2026 Miri Utevsky</p>
-
-    </footer>
-
+    <audio id="background-music" loop>
+        <source src="sounds/background/jungle.mp3" type="audio/mpeg">
+    </audio>
+    <script src="script.js"></script>
 </body>
+
 
 </html>
